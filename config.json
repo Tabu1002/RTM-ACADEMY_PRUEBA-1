@@ -1,0 +1,632 @@
+{
+	"config": {
+		"background": "",
+		"colors": {
+			"background": "#FFFFFF",
+			"experimental": false,
+			"text": "#000000"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "/* EDIT THE “MAIN COLORS” BELOW TO APPLY YOUR ORGANISATION’S COLORS */\n/* Add your primary, secondary and tertiary colours by typing colour names such as \"white\" etc. or by replacing the hex color codes below. */\n:root {\n  --primary-palette-colour: #E0E0E0;\n  --secondary-palette-colour: #FFFFFF;\n  --primary-font-colour: #4F4F4F;\n  --secondary-font-colour: #000000;\n}\n\n/* No need to touch the code below*/\n#slides-view, #slides-view-inner, #lesson-menu {\n  color: var(--secondary-font-colour) !important;\n  background-color: var(--secondary-palette-colour) !important;\n}\n/*/ Buttons /*/\n.btn.btn-muted,\n.btn.btn-solid,\n.btn.btn-primary {\n  background: var(--primary-palette-colour);\n  color: var(--primary-font-colour);\n}\n.btn.btn-muted.__active,\n.btn.btn-muted:hover,\n.btn.btn-solid.__active,\n.btn.btn-solid:hover,\n.btn.btn-primary__active,\n.btn.btn-primary:hover {\n  background: var(--primary-palette-colour);\n  color: var(--primary-font-colour);\n  filter: brightness(90%);\n}\n/* exclude game memory */\n.slide-game-memory .game-tiles .btn.btn-solid {\n  background: var(--primary-palette-colour);\n  color: var(--primary-font-colour);\n}\n/*/ Header & Slides /*/\n/*/ Corner Box /*/\n#lesson-header-nav {\n  background: #00000040;\n  color: #fff;\n}\n/*/ Menu Button /*/\n#lesson-header-nav-menu-btn {\n  border-left: 1px solid var(--secondary-palette-colour);\n}\n/*/ Line at the Top/*/\n#lesson-header-title-content {\n  border-bottom: 1px solid var(--secondary-font-colour);\n  color: var(--secondary-font-colour);\n}\n/*/ Progress Bar /*/\n#indicator {\n  background-color: #00000040;\n  color: var(--primary-palette-colour);\n}\n/*/ Line at the bottom/*/\n#slides {\n  border-bottom: 1px solid var(--secondary-font-colour);\n}\n/*/ Image Background Color When You Zoom in/*/\n.pswp__item {\n  background: var(--primary-palette-colour);\n}\n\n/*/----- Multiple Choice Slides ------/*/\n/*/Multiple Choice Slides Selected Button/*/\n.selectable.active .btn {\n  background-color: var(--secondary-palette-colour);\n  color: var(--secondary-font-colour);\n}\n/*/Multiple Choice Incorrect/*/\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background: var(--secondary-palette-colour);\n  color: var(--secondary-font-colour);\n}\n/*/Multiple Choice Correct/*/\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background: var(--primary-palette-colour);\n  color: var(--primary-font-colour);\n}\n/*/-----------------------------------/*/\n\n/*/Chat Bubble on selected/*/\n.slide-chat.show-msg-true .message--answer.active {\n  background: var(--primary-palette-colour);\n  color: var(--primary-font-colour);\n}\n/*/Chat Bubble, the Pointy Part/*/\n.slide-chat.show-msg-true .message--answer.active:after {\n  border-color: var(--primary-palette-colour) transparent transparent;\n}\n/*/Expandable List/*/\n.slide-expandable-list .item.active .item-button,\n.slide-expandable-list .item.active .item-button:after {\n  background: var(--secondary-palette-colour);\n  color: var(--secondary-font-colour);\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/LOGO_RTM_hzicb0.png",
+		"minimumScore": 0,
+		"pageNumbers": true,
+		"pagination": true,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "cf54a5ef-b9a7-4609-8439-fc5a0432e9bf",
+			"type": "title",
+			"subtype": "default",
+			"name": 0,
+			"displayIndex": 1,
+			"templateName": "Title",
+			"templateDescription": "Introduce your lesson",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "cf54a5ef-b9a7-4609-8439-fc5a0432e9bf"
+			},
+			"data": {
+				"buttonText": "OK, let's go!",
+				"exitButton": false,
+				"title": "Introduction to RTM",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": "html",
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "5cfcfa4d-d15b-4a18-b8cb-12faf9117490",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 1,
+			"displayIndex": 2,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "5cfcfa4d-d15b-4a18-b8cb-12faf9117490"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "fit_content_assets/INTRO_RTM_ACADEMY_rnwqxa.mp4",
+						"contentType": "video"
+					}
+				],
+				"prompt": null,
+				"doneText": null,
+				"preventFocus": false,
+				"title": "<p>1.1.1 Definition and importance of RTM</p><p></p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "71530d8a-03a9-4151-90c1-13715aa5751d",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 2,
+			"displayIndex": 3,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "71530d8a-03a9-4151-90c1-13715aa5751d"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "<p>RTM plays a pivotal role in ensuring that products reach customers efficiently, meeting their preferences and needs, and enhancing the customer experience by:</p><ul><li><p><strong>Customized Offerings: </strong>Companies can tailor product offerings based on customer preferences, enhancing the likelihood of customer satisfaction. Coca-Cola, for example, may adjust its RTM strategy to prioritize healthier beverage options in regions with such preferences.</p></li></ul><p></p>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/product_customizatiojn_yijiq8.png",
+						"contentType": "image"
+					},
+					{
+						"content": "<ul><li><p><strong>Enhanced Customer Support: </strong>RTM includes customer support, where companies use their distribution networks to aid and address inquiries or issues. For instance, a DSD model with dedicated sales representatives can improve the customer experience by personally attending and implementing selected strategies directly on the POS.</p></li></ul>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/117-Types-Process-Importance-of-Great-Customer-Support_rs7fsb.jpg",
+						"contentType": "image"
+					},
+					{
+						"content": "<ul><li><p><strong>Efficient Distribution: </strong>RTM ensures that products are readily available, with a solution fit to attend to the consumer/customer needs in addition to reducing stockouts, developing clients, and promoting special portfolios among many other benefits.</p></li></ul>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/1680267359853_kgb21u_prbv3v.jpg",
+						"contentType": "image"
+					},
+					{
+						"content": "<ul><li><p><strong>Rapid Response to Market Changes: </strong>Agile RTM strategies enable quick responses to shifts in demand or consumer preferences and clients’ demands.</p></li></ul>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/GettyImages-982535840_f6dp8d.jpg",
+						"contentType": "image"
+					},
+					{
+						"content": "<ul><li><p><strong>Data-Driven Insights: </strong>RTM enables data and insights into customer and client behavior, preferences, and trends, to become actionable items through a framework that allows operations to transform and maximize the opportunities as well as, make informed decisions.</p></li></ul>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/5-Dicas-Para-Entrar-no-Mercado-de-Ciencia-de-Dados_svbhst.jpg",
+						"contentType": "image"
+					}
+				],
+				"prompt": null,
+				"doneText": null,
+				"preventFocus": false,
+				"title": "<p>1.1.2 Role of RTM in enhancing customer experience</p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "65cc0a57-4536-463e-b96e-609faf75ae62",
+			"type": "multiple-choice-game",
+			"subtype": "default",
+			"name": 3,
+			"displayIndex": 4,
+			"templateName": "Multiple Choice",
+			"templateDescription": "Select the correct answer(s)",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "<p>What role does an efficient RTM strategy play in enhancing the customer experience?</p>",
+							"questionId": "8917b0cf-cf8f-4e76-8aa6-ecbe24f42fb7",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>Providing customer support</p>",
+								"correct": false,
+								"answerId": "30b44d29-83ed-4452-ab0b-98e61fcab3a5",
+								"type": "text"
+							},
+							{
+								"content": "<p>Customizing product offerings</p>",
+								"correct": false,
+								"answerId": "97e35cc3-f641-467d-b2a1-bccfb7ceead9",
+								"type": "text"
+							},
+							{
+								"content": "<p>Distributing products rapidly</p>",
+								"correct": false,
+								"answerId": "a298148f-5bd7-406b-a9af-830c9fcbcb96",
+								"type": "text"
+							},
+							{
+								"content": "<p>All the above</p>",
+								"correct": true,
+								"answerId": "37eb88e2-5d15-4e38-9d49-43cfccf4228e",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "65cc0a57-4536-463e-b96e-609faf75ae62"
+			},
+			"data": {
+				"additionalContent": "",
+				"additionalContentType": "text",
+				"selectable": 1,
+				"randomize": false,
+				"doneText": "Continue",
+				"answers": [
+					{
+						"id": "f94ee25b-7032-40f1-a1c7-d5b718059e4a",
+						"content": "<p>Providing customer support</p>",
+						"correct": false
+					},
+					{
+						"id": "001bf5bc-c49b-41a4-a87f-ed33e158f916",
+						"content": "<p>Customizing product offerings</p>",
+						"correct": false
+					},
+					{
+						"id": "a5624e36-46b6-43c6-97ac-538f4f3f6f5c",
+						"content": "<p>Distributing products rapidly</p>",
+						"correct": false
+					},
+					{
+						"id": "be120fca-c6fe-4bac-ab61-982c64170dfa",
+						"content": "<p>All the above</p>",
+						"correct": true
+					}
+				],
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "<p></p>",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select the correct answer",
+				"title": "<p>What role does an efficient RTM strategy play in enhancing the customer experience?</p>",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": "text",
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 0
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "6e931d82-e4a6-e544-701e-2462d95328c4",
+			"type": "expandable-list",
+			"subtype": "three",
+			"name": 4,
+			"displayIndex": 5,
+			"templateName": "Expandable list",
+			"templateDescription": "Display a list of bullet points",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "6e931d82-e4a6-e544-701e-2462d95328c4"
+			},
+			"data": {
+				"content": null,
+				"prompt": "Select an item to see more",
+				"focus": true,
+				"doneText": "Continue",
+				"list": [
+					{
+						"content": "<p>The process of evaluating and interpreting market data, trends, customer behaviors, and competition to make informed business decisions.</p>",
+						"title": "<p>Market Analysis</p>"
+					},
+					{
+						"content": "<p>Dividing a larger market into smaller, distinct groups (segments) based on specific characteristics like demographics, psychographics, behavior, or geography.</p>",
+						"title": "<p>Market Segmentation</p>"
+					},
+					{
+						"content": "<p>The unique set of benefits or value that a product or service offers to its customers, differentiating it from competitors and fulfilling customer needs or solving their problems.</p>",
+						"title": "<p>Value Proposition</p>"
+					},
+					{
+						"content": "<p>Collaborative associations with external organizations, suppliers, distributors, or other stakeholders to enhance operations, expand reach, share resources, or improve the value delivered to customers.</p>",
+						"title": "<p>Partner Relationships</p>"
+					},
+					{
+						"content": "<p>Formal partnerships between organizations to achieve mutual strategic goals, often involving shared resources, technology, or expertise.</p>",
+						"title": "<p>Strategic Alliances</p>"
+					},
+					{
+						"content": "<p>The evaluation and assessment of an organization's achievements against predetermined objectives and key performance indicators (KPIs) to gauge effectiveness, efficiency, and progress.</p>",
+						"title": "<p>Performance Measurement</p>"
+					}
+				],
+				"title": "<p>1.2.1 Getting to Know the Concepts</p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "cca31c13-8534-03e3-0444-ce3c0eee09c6",
+			"type": "connect",
+			"subtype": "connect-three",
+			"name": 5,
+			"displayIndex": 6,
+			"templateName": "Connect",
+			"templateDescription": "Draw a line between each pair",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<p>Match the concepts with their definition or example</p>",
+							"content": "<p>Market Analysis and Segmentation</p>",
+							"questionId": "130a7c52-efab-4637-b14e-a42c03b20949",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>Unique benefits a product or service offers to customers, distinguishing it from competitors.</p>",
+								"correct": false,
+								"answerId": "89fa8a66-8171-4e12-8d9a-62d966f380e9",
+								"type": "text"
+							},
+							{
+								"content": "<p>Collaborative associations with external stakeholders to enhance operations or expand reach.</p>",
+								"correct": false,
+								"answerId": "62ae7b1f-5308-4de4-b1d7-4e2e938cdd30",
+								"type": "text"
+							},
+							{
+								"content": "<p>Evaluating organizational achievements against predetermined objectives using specific metrics.</p>",
+								"correct": false,
+								"answerId": "b961bfff-d530-4bc4-9d78-0d91b3e8ebf8",
+								"type": "text"
+							},
+							{
+								"content": "<p>Dividing the market based on consumer behavior and demographics to tailor marketing strategies.</p>",
+								"correct": true,
+								"answerId": "d8de16d9-3a3b-4efd-8d77-233ab96c2d49",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<p>Match the concepts with their definition or example</p>",
+							"content": "<p>Value Propositions</p>",
+							"questionId": "6b08e1fb-6efa-41e8-a64c-5b5128fffcfd",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>Dividing the market based on consumer behavior and demographics to tailor marketing strategies.</p>",
+								"correct": false,
+								"answerId": "8a530047-5386-4543-bf5a-1a33f545e93b",
+								"type": "text"
+							},
+							{
+								"content": "<p>Collaborative associations with external stakeholders to enhance operations or expand reach.</p>",
+								"correct": false,
+								"answerId": "6240b5c4-9875-4458-8808-5167d1a9bd10",
+								"type": "text"
+							},
+							{
+								"content": "<p>Evaluating organizational achievements against predetermined objectives using specific metrics.</p>",
+								"correct": false,
+								"answerId": "438c44d9-2489-4184-bfc8-6993fccc85f1",
+								"type": "text"
+							},
+							{
+								"content": "<p>Unique benefits a product or service offers to customers, distinguishing it from competitors.</p>",
+								"correct": true,
+								"answerId": "bc7a59b9-b978-4591-9027-7467e094a665",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<p>Match the concepts with their definition or example</p>",
+							"content": "<p>Partner Relationships</p>",
+							"questionId": "28375a51-c929-4d34-9a35-b76924f7b4dd",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>Dividing the market based on consumer behavior and demographics to tailor marketing strategies.</p>",
+								"correct": false,
+								"answerId": "aa9f497e-87c0-4909-b8f9-e8040ec6bbeb",
+								"type": "text"
+							},
+							{
+								"content": "<p>Unique benefits a product or service offers to customers, distinguishing it from competitors.</p>",
+								"correct": false,
+								"answerId": "4faaaabc-4052-44b3-ab5b-1a4a5a14ccaf",
+								"type": "text"
+							},
+							{
+								"content": "<p>Evaluating organizational achievements against predetermined objectives using specific metrics.</p>",
+								"correct": false,
+								"answerId": "83e8f454-3040-485c-ba9e-47b97722f3a0",
+								"type": "text"
+							},
+							{
+								"content": "<p>Collaborative associations with external stakeholders to enhance operations or expand reach.</p>",
+								"correct": true,
+								"answerId": "602f81c2-a9d8-43fa-966b-554731b1426a",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<p>Match the concepts with their definition or example</p>",
+							"content": "<p>Performance Measurement</p>",
+							"questionId": "4aaea8bb-1567-43ea-a67f-46f2d3e94f3a",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>Dividing the market based on consumer behavior and demographics to tailor marketing strategies.</p>",
+								"correct": false,
+								"answerId": "cc2646de-837b-4177-a7c1-614bf60ff056",
+								"type": "text"
+							},
+							{
+								"content": "<p>Unique benefits a product or service offers to customers, distinguishing it from competitors.</p>",
+								"correct": false,
+								"answerId": "a3fc26f0-4e75-4e88-8b5c-e148da98fbc7",
+								"type": "text"
+							},
+							{
+								"content": "<p>Collaborative associations with external stakeholders to enhance operations or expand reach.</p>",
+								"correct": false,
+								"answerId": "ed922b5f-7678-4dd1-9d19-b56dad99ea85",
+								"type": "text"
+							},
+							{
+								"content": "<p>Evaluating organizational achievements against predetermined objectives using specific metrics.</p>",
+								"correct": true,
+								"answerId": "451153d2-3812-4fb2-aa60-a5383cb57ea0",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "cca31c13-8534-03e3-0444-ce3c0eee09c6"
+			},
+			"data": {
+				"pairs": [
+					{
+						"right": "<p>Dividing the market based on consumer behavior and demographics to tailor marketing strategies.</p>",
+						"rightType": "text",
+						"left": "<p>Market Analysis and Segmentation</p>",
+						"leftType": "text"
+					},
+					{
+						"right": "<p>Unique benefits a product or service offers to customers, distinguishing it from competitors.</p>",
+						"rightType": "text",
+						"left": "<p>Value Propositions</p>",
+						"leftType": "text"
+					},
+					{
+						"right": "<p>Collaborative associations with external stakeholders to enhance operations or expand reach.</p>",
+						"rightType": "text",
+						"left": "<p>Partner Relationships</p>",
+						"leftType": "text"
+					},
+					{
+						"right": "<p>Evaluating organizational achievements against predetermined objectives using specific metrics.</p>",
+						"rightType": "text",
+						"left": "<p>Performance Measurement</p>",
+						"leftType": "text"
+					}
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Draw a line between each pair",
+				"title": "<p>Match the concepts with their definition or example</p>",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 0
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "9f64d676-5b19-a0e7-e26d-8b1c4dbcebc8",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 6,
+			"displayIndex": 7,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "9f64d676-5b19-a0e7-e26d-8b1c4dbcebc8"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "<p><strong>Market analysis</strong> involves a thorough assessment of factors influencing a market, encompassing industry trends, consumer behavior, competition, and economic conditions. This data-driven approach aids in comprehending market size, growth potential, challenges, and opportunities and differentiates how we come to the market through segmentation.</p><p><strong>Purpose of Market Analysis:</strong></p><ul><li><p>Identifying Opportunities: Discovering unexplored market niches aligning with a company’s capabilities.</p></li><li><p>Risk Mitigation: Evaluating potential risks and formulating strategies to mitigate them.</p></li><li><p>Optimizing Market Entry and Expansion: Strategizing the right timing, location, and approach for market entry or expansion.</p></li><li><p>Competitive Benchmarking: Compares a company’s performance, products, and strategies against its competitors to identify areas for improvement and competitive advantages</p></li></ul><p></p><p></p>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/bigstock-Couple-Of-Professionals-Analyz-356220161-min_rndldm.jpg",
+						"contentType": "image"
+					},
+					{
+						"content": "<p><strong>Market segmentation </strong>involves dividing a diverse market into smaller, more manageable segments based on shared characteristics such as demographics, psychographics, behavior, or geography. Each segment represents a distinct group with common traits, enabling tailored marketing strategies and product customization.</p><p><strong>Purpose of Market Segmentation:</strong></p><ul><li><p>Targeted Marketing: Customizing marketing efforts, messaging, and promotions to suit the unique needs of specific segments.</p></li><li><p>Product Development: Designing products that precisely meet the requirements and preferences of targeted customer groups.</p></li><li><p>Differentiation Value Offer: Strategic approach that enables a product, service, or brand to stand out from its competitors by providing unique features or benefits. It involves having a unique selling proposition (USP), which is a clear statement highlighting what makes the offering superior. Customers perceive this uniqueness, and it affects their preferences and purchasing decisions.</p></li><li><p>Resource Efficiency: Allocating marketing resources effectively by focusing efforts on segments likely to respond positively.</p></li></ul>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/istockphoto-1328137289-612x612_kgvlqb_icnxov.jpg",
+						"contentType": "image"
+					},
+					{
+						"content": "<p>Market Analysis and Segmentation have different levels of maturity and depth that depend on the operational capacity and reach one possesses to effectively reach the customer/consumer.</p>",
+						"contentType": "text"
+					},
+					{
+						"content": "<p><em>Market Segmentation continues at 3.3.1 Module 3. RTM Framework: Demand Shaping</em></p>",
+						"contentType": "text"
+					}
+				],
+				"prompt": null,
+				"doneText": null,
+				"preventFocus": false,
+				"title": "<p>1.2.2 Market Analysis and Segmentation</p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "f39883fa-4f06-4ab1-b846-4f2fcc956ed2",
+			"type": "exit",
+			"subtype": "default",
+			"name": 7,
+			"displayIndex": 8,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "f39883fa-4f06-4ab1-b846-4f2fcc956ed2"
+			},
+			"data": {
+				"content": "Nice work. You've completed this lesson.",
+				"buttonText": "Exit Lesson",
+				"title": "That's it!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "RTM Academy",
+	"index": 0,
+	"id": "651ef8ebdb34f6894c828aa9"
+}
